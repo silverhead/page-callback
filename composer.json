@@ -1,0 +1,27 @@
+{
+    "name": "silverhead/page-callback",
+    "description": "Help to come back to the calling page if any pages call same page",
+    "minimum-stability": "stable",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "nicolas pin",
+            "email": "pin.nicolas@free.fr"
+        }
+    ],
+    "autoload": {
+        "classmap": [
+            "src/"
+        ],
+        "psr-4": {
+            "SilverheadPageCallback\\": "src/",
+            "Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": ">=7.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7"
+    }
+}
