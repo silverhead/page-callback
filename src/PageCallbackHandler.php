@@ -14,10 +14,10 @@ class PageCallbackHandler
         $this->storagePageCallback = $storagePageCallback;
     }
 
-    public function setPageCallback($keyCallingPage, $callBackUrl, $urlParams = [], $anchor = null): self
+    public function setPageCallback($keyCalledPage, $callBackUrl, $urlParams = [], $anchor = null): self
     {
         $pageCallBack = new PageCallback();
-        $pageCallBack->setKeyCallingPage($keyCallingPage)
+        $pageCallBack->setKeyCalledPage($keyCalledPage)
             ->setCallingPageUrl($callBackUrl)
             ->setUrlParams($urlParams)
             ->setAnchor($anchor);
@@ -28,11 +28,11 @@ class PageCallbackHandler
     }
 
     /**
-     * @param string $keyCallingPage
+     * @param string $keyCalledPage
      * @return PageCallback|null
      */
-    public function getPageCallback(string $keyCallingPage): ?PageCallback
+    public function getPageCallback(string $keyCalledPage): ?PageCallback
     {
-        return $this->storagePageCallback->unStorePageCallback($keyCallingPage);
+        return $this->storagePageCallback->unStorePageCallback($keyCalledPage);
     }
 }

@@ -11,7 +11,7 @@ class StoragePageCallBackMock implements StoragePageCallbackInterface
 
     function storePageCallback(PageCallback $pageCallback): void
     {
-        $this->pageCallbacks[$pageCallback->getKeyCallingPage()] = $pageCallback;
+        $this->pageCallbacks[$pageCallback->getKeyCalledPage()] = $pageCallback;
     }
 
     function unStorePageCallback(string $keyCallingPage): ?PageCallback

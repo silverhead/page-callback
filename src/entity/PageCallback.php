@@ -7,7 +7,7 @@ class PageCallback
     /**
      * @var string
      */
-    private $keyCallingPage = "";
+    private $keyCalledPage = "";
 
     /**
      * @var string
@@ -27,18 +27,18 @@ class PageCallback
     /**
      * @return string
      */
-    public function getKeyCallingPage()
+    public function getKeyCalledPage()
     {
-        return $this->keyCallingPage;
+        return $this->keyCalledPage;
     }
 
     /**
-     * @param string $keyCallingPage
+     * @param string $keyCalledPage
      * @return PageCallback
      */
-    public function setKeyCallingPage($keyCallingPage)
+    public function setKeyCalledPage($keyCalledPage)
     {
-        $this->keyCallingPage = $keyCallingPage;
+        $this->keyCalledPage = $keyCalledPage;
 
         return $this;
     }
