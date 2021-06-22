@@ -1,6 +1,6 @@
 <?php
 
-namespace SilverheadPageCallback\entity;
+namespace Silverhead\PageCallback\Entity;
 
 class PageCallback
 {

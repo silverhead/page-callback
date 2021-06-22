@@ -1,9 +1,9 @@
 <?php
 
-namespace SilverheadPageCallback;
+namespace Silverhead\PageCallback;
 
-use SilverheadPageCallback\adapter\StoragePageCallbackInterface;
-use SilverheadPageCallback\entity\PageCallback;
+use Silverhead\PageCallback\Adapter\StoragePageCallbackInterface;
+use Silverhead\PageCallback\Entity\PageCallback;
 
 class PageCallbackHandler
 {

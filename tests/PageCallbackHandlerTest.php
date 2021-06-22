@@ -1,12 +1,12 @@
 <?php declare(strict_types=1);
 
-namespace Tests;
+namespace Silverhead\PageCallback\Tests;
 
 use PHPUnit\Framework\TestCase;
-use SilverheadPageCallback\entity\PageCallback;
-use SilverheadPageCallback\adapter\StoragePageCallbackInterface;
-use SilverheadPageCallback\PageCallbackHandler;
-use Tests\adapter\StoragePageCallBackMock;
+use Silverhead\PageCallback\entity\PageCallback;
+use Silverhead\PageCallback\adapter\StoragePageCallbackInterface;
+use Silverhead\PageCallback\PageCallbackHandler;
+use Silverhead\PageCallback\Tests\Adapter\StoragePageCallBackMock;
 
 class PageCallbackHandlerTest extends TestCase
 {

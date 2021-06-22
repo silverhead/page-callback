@@ -1,9 +1,9 @@
 <?php
 
-namespace Tests\entity;
+namespace Silverhead\PageCallback\Tests\Entity;
 
 use PHPUnit\Framework\TestCase;
-use SilverheadPageCallback\entity\PageCallback;
+use Silverhead\PageCallback\Entity\PageCallback;
 
 class PageCallbackTest extends TestCase
 {

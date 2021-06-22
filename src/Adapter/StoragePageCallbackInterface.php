@@ -1,8 +1,8 @@
 <?php
 
-namespace SilverheadPageCallback\adapter;
+namespace Silverhead\PageCallback\Adapter;
 
-use SilverheadPageCallback\entity\PageCallback;
+use Silverhead\PageCallback\Entity\PageCallback;
 
 interface StoragePageCallbackInterface
 {
@@ -15,8 +15,8 @@ interface StoragePageCallbackInterface
 
     /**
      * Get pageCallback of memory (session, database etc..)
-     * @param string $keyCallingPage
+     * @param string $keyCalledPage
      * @return PageCallback|null
      */
-    function unStorePageCallback(string $keyCallingPage): ?PageCallback;
+    function unStorePageCallback(string $keyCalledPage): ?PageCallback;
 }
